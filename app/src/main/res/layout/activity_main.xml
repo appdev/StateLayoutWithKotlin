@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_button"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/btn_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_empty"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="empty"/>
+
+        <Button
+            android:id="@+id/btn_not_network"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="not network"
+            android:textSize="12sp"/>
+
+        <Button
+            android:id="@+id/btn_error"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="error"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_button1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ll_button"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_loading"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="loading"/>
+
+        <Button
+            android:id="@+id/btn_time_out"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="time out"/>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="sign in"/>
+
+        <Button
+            android:id="@+id/btn_custom"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="custom"/>
+    </LinearLayout>
+
+    <com.apkdv.KotlinDemo.pagestate.StateLayout
+
+        android:id="@+id/status_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:emptyImg="@mipmap/ic_state_empty"
+        app:emptyText="Empty"
+        app:errorImg="@mipmap/ic_state_error"
+        app:errorText="Error"
+        app:loadingText="Loading..."
+        app:loginImg="@mipmap/ic_state_login"
+        app:loginText="Sign in"
+        app:noNetworkImg="@mipmap/ic_state_no_network"
+        app:noNetworkText="No Network"
+        app:timeOutImg="@mipmap/ic_state_time_out"
+        app:timeOutText="Timeout">
+    </com.apkdv.KotlinDemo.pagestate.StateLayout>
+</LinearLayout>
