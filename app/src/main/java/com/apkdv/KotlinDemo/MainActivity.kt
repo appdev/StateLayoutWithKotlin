@@ -1,5 +1,6 @@
 package com.apkdv.KotlinDemo
 
+import android.content.Context
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
@@ -23,19 +24,20 @@ class MainActivity : BaseActivity(), View.OnClickListener {
         stateLayout?.setUseAnimation(true);
         stateLayout?.mListener = object : OnViewRefreshListener {
             override fun refreshClick() {
-                showToast("Click")
+                applicationContext.showToast("Click")
 
             }
 
             override fun loginClick() {
-                showToast("Login")
+                applicationContext.showToast("Login")
             }
 
         }
     }
 
-    private fun showToast(s: String) {
-        Toast.makeText(this@MainActivity, s, Toast.LENGTH_SHORT).show()
+
+    fun Context.showToast(s: String) {
+        Toast.makeText(applicationContext, s, Toast.LENGTH_SHORT).show()
     }
 
     override fun onClick(v: View) {
