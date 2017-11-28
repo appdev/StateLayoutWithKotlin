@@ -1,4 +1,3 @@
-StateLayout 原地址：https://github.com/fingdo/stateLayout
 
 这个项目是根据 [StateLayout](https://github.com/fingdo/stateLayout) 项目而来，感谢原作者的贡献，我本人在功能实现上只做了稍许改动，主要的不同在于这个是完全使用Kotlin编写的,可以看做是一个kotlin练手项目。
 由于我也是刚刚使用Kotlin，使用还不是很熟练，如果在写法、功能实现上有不够优雅的地方欢迎指正！
